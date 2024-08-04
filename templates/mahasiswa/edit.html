@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="/mahasiswa/edit/{{ mahasiswa[1] }}" method=post>
+    <div class="mb-13 mt-3">
+        <label for="nama" class="form-label">Nama : </label>
+        <input type="input" class="form-control" placeholder="Ubah Nama" name="nama" value="{{ mahasiswa[0] }}">
+    </div>
+
+    <div class="mb-3">
+        <label for="jurusan" class="form-label">Jurusan : </label>
+        <input type="input" class="form-control" placeholder="Ubah Jurusan" name="jurusan" value="{{ mahasiswa[2] }}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="/mahasiswa/tambah" method="post">
+    <div class="mb-13 mt-3">
+        <label for="nama" class="form-label">Nama :</label>
+        <input type="input" class="form-control" placeholder="Isi Nama" name="nama" required autofocus>
+    </div>
+
+    <div class="mb-3">
+        <label for="npm" class="form-label">NPM :</label>
+        <input type="input" class="form-control" placeholder="Isi NPM" name="npm" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="jurusan" class="form-label">Jurusan :</label>
+        <input type="input" class="form-control" placeholder="Isi Jurusan" name="jurusan" required >
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+{% endblock %}
