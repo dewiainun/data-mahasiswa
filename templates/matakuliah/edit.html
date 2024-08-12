@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="/matakuliah/edit/{{ matakuliah[0] }}" method="post">
+
+    <div class="mb-13 mt-3">
+        <label for="nama_mk" class="form-label">Judul Mata Kuliah : </label>
+        <input type="input" class="form-control" placeholder="Ubah Nama Mata Kuliah" name="nama_mk" value="{{ matakuliah[1] }}">
+    </div>
+
+    <div class="mb-3">
+        <label for="fakultas" class="form-label">Fakultas : </label>
+        <input type="input" class="form-control" placeholder="Ubah Fakultas" name="fakultas" value="{{ matakuliah[2] }}">
+    </div>
+
+    <div class="mb-13 mt-3">
+        <label for="sks" class="form-label">Jumlah SKS: </label>
+        <input type="input" class="form-control" placeholder="Ubah SKS" name="sks" value="{{ matakuliah[3] }}">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Update</button>
+</form>
+{% endblock %}

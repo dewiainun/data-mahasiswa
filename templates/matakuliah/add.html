@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<form action="/matakuliah/tambah" method="post">
+    <div class="mb-13 mt-3">
+        <label for="kode_matkul" class="form-label">Kode Mata Kuliah :</label>
+        <input type="input" class="form-control" placeholder="Isi Kode Mata Kuliah" name="kode_matkul" required autofocus>
+    </div>
+
+    <div class="mb-3">
+        <label for="nama_mk" class="form-label">Judul Mata Kuliah :</label>
+        <input type="input" class="form-control" placeholder="Isi Mata Kuliah" name="nama_mk" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="fakultas" class="form-label">Fakultas :</label>
+        <input type="input" class="form-control" placeholder="Isi Fakultas" name="fakultas" required >
+    </div>
+
+    <div class="mb-3">
+        <label for="sks" class="form-label">SKS :</label>
+        <input type="input" class="form-control" placeholder="Isi SKS" name="sks" required >
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+{% endblock %}
