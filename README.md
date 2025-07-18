@@ -60,8 +60,8 @@ Aplikasi web sederhana untuk manajemen data mahasiswa dan mata kuliah menggunaka
      ```
    - Pastikan konfigurasi database di `app.py` sesuai:
      ```python
-     app.config['MYSQL_HOST'] = 'localhost'
-     app.config['MYSQL_USER'] = 'root'
+     app.config['MYSQL_HOST'] = ''
+     app.config['MYSQL_USER'] = ''
      app.config['MYSQL_PASSWORD'] = ''
      app.config['MYSQL_DB'] = 'database_new'
      ```
